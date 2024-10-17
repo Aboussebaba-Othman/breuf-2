@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    color: #195362;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #0288D1; /* sea blue */
+    padding: 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #0288D1; /* sea blue */
+    background-color: #81D4FA; /* lighter sea blue */
+    border-radius: 5px;
+}
+
+.navbar ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: #81D4FA; /* lighter sea blue */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.brand {
+    display: flex;
+    position: absolute;
+    margin-right: 85%;
+    margin-top: 1px;
+    width: 80px;
+    height: 80px;
+}
+
+
+
+/* Hero section*/
+.hero {
+    background-image: url('images/landing1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    word-spacing: 5px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    word-spacing: 5px;
+}
+
+.btn {
+    background-color: #0288D1;
+    color: white;
+    padding: 0.75em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background-color: #6e99f5;
+}
+
+
+
+/* Start Gallery */
+
+section#collection {
+    padding: 40px;
+    text-align: center;
+    background-color: #E0F7FA; /* light sea color */
+}
+
+#collection h2 {
+    color: #0288D1;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#collection p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 6px; /* Adjust this value as needed */
+
+    line-height: 30px;
+
+}
+
+.art-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.art-item {
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.art-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#show-more {
+    margin-top: 30px;
+}
+
+#show-more button {
+    background-color: #0288D1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#show-more button:hover {
+    background-color: #81D4FA;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color:#0288D1 ;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-left: 200px;
+
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.footer-section p {
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+/* page gallery */
+#head{
+    background-image: url('images/cc.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 80vh;
+}
+.reduct{
+    padding-top: 127px;
+    color: azure;
+}
+.reduct h1{
+    font-size: 70px;
+}
+.reduct p{
+    font-size: 20px;
+}
+#gall{
+    background-color: #E0F7FA;
+}
+.h1{
+    text-align: center;
+    font-size: 50px;
+    color: #0288D1;
+    padding-top: 30px;
+    
+}
+.jpn-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.jpn-item{
+    border: solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.jpn-item img{
+    border-radius: 8px;
+    width: 270px;
+    height: 55vh; 
+}
+.jpn-item span{
+    color: red;
+}
+.jpn-item:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.3s ease-out;
+}
+/* page About */
+#about-header{
+    background-image: url('images/about-hero.jpg');
+    background-size: cover;
+    height: 80vh;
+    color: #ffffff; 
+}
+#about-header h1{
+    padding: 50px 0 40px 0;
+    font-size: 60px;
+    text-align: center;
+}
+#about-header p{
+    max-width: 100%;
+    text-align: center;
+}
+#id-about{
+    background-color: #E0F7FA;
+}
+#id-about p{
+    text-align: center;
+    max-width: 100%;
+}
+.about-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+.equipe-about img{
+    border-radius: 5px;
+    box-shadow: 0 50px 1px 0px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    height: 60vh;
+}
+.equipe-about h1{
+    text-align: center;
+}
+/* -------------------page contact----------------- */
+#contact-home{
+    background-image: url('images/contact-home.avif');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    text-align: center;
+}
+.let-talk{
+    padding-top: 127px;
+    color: rgb(35, 37, 37);
+}
+.let-talk h1{
+    font-size: 60px;
+    color: #6060ba;
+}
+.let-talk p{
+    font-size: 40px;
+    color: #ffffff;
+}
+#form-conttact h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
