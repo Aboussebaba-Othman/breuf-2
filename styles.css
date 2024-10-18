@@ -76,7 +76,7 @@ nav {
 
 /* Hero section*/
 .hero {
-    background-image: url('images/landing1.jpg');
+    background-image: url('images/landing1-min.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -241,21 +241,21 @@ footer p {
 }
 /* page gallery */
 #head{
-    background-image: url('images/cc.jpg');
+    background-image: url('images/home-gall.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
-    height: 80vh;
+    height: 100vh;
 }
 .reduct{
     padding-top: 127px;
     color: azure;
 }
 .reduct h1{
-    font-size: 70px;
+    font-size: 80px;
 }
 .reduct p{
-    font-size: 20px;
+    font-size: 30px;
 }
 #gall{
     background-color: #E0F7FA;
@@ -283,13 +283,24 @@ footer p {
     background-color: #ffffff;
 }
 .jpn-item img{
-    border-radius: 8px;
     width: 270px;
     height: 55vh; 
     margin: 15px;
 }
 .jpn-item span{
     color: red;
+}
+.jpn-item button{
+    background-color: #0288D1;
+    color: #ffffff;
+    margin: 5px;
+    border-radius: 3px;
+    border: none;
+    padding: 8px 19px;
+    cursor: pointer;
+}
+
+
 }
 .jpn-item:hover{
     transform: scale(1.1,1.1);
@@ -332,12 +343,12 @@ footer p {
     width: 280px;
     height: 60vh;
 }
-.equipe-about h1{
+.equipe-about h2{
     text-align: center;
 }
 /* -------------------page contact----------------- */
 #contact-home{
-    background-image: url('images/ff.jpg');
+    background-image: url('images/home-contact.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -350,11 +361,11 @@ footer p {
 }
 .let-talk h1{
     font-size: 60px;
-    color: #1e00ff;
+    color: #ffffff;
 }
 .let-talk p{
     font-size: 40px;
-    color: #e2d3d3;
+    color: #000001;
 }
 
 .form-msg {
